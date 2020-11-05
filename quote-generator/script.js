@@ -47,7 +47,9 @@ async function getQuote() {
     // stop loader and show the quote
     removeLoadingSpinner()
   } catch (error) {
-    getQuote();
+    console.log(error)
+    alert('Something Went Wrong, Please Refresh Your Browser')
+    return;
   }
 }
 
